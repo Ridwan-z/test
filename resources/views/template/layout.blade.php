@@ -317,10 +317,17 @@
             >
               <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-               <li class="nav-item"><a href="#" class="nav-link"><i class="far fa-circle nav-icon"></i><p>Barang</p></a></li>
+               <li class="nav-item"><a href="/barang" class="nav-link"><i class="far fa-circle nav-icon"></i><p>Barang</p></a></li>
                <li class="nav-item"><a href="#" class="nav-link"><i class="far fa-circle nav-icon"></i><p>Transaksi</p></a></li>
                <li class="nav-item"><a href="#" class="nav-link"><i class="far fa-circle nav-icon"></i><p>Detail transaksi</p></a></li>
             </ul>
+
+            <li class="nav-item">
+              <form action="/logout" method="post">
+                @csrf
+              <button class="btn btn-danger">Logout</button>
+              </form>
+          </li>
           </nav>
           <!-- /.sidebar-menu -->
         </div>

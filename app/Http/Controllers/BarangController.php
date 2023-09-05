@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class BarangController extends Controller
 {
-   public function index(){
+   public function barang(){
       $barang = Barang::all();
          return view('barang/index',compact(['barang']));
    }
